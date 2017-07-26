@@ -8,4 +8,5 @@
 Homestead.json
 Homestead.yaml
 npm-debug.log
+Nginx-1.8_vhost.conf
 .env
