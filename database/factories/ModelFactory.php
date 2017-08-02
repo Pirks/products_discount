@@ -22,3 +22,18 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(\App\Models\Voucher::class, function (Faker\Generator $faker) {
+    return [
+        'discount_id' => 1,
+        'start_date' => '2017-07-1',
+        'end_date' => '2017-07-21',
+    ];
+});
+
+$factory->define(\App\Models\Product::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'price' => $faker->randomFloat(2, 1, 1000),
+    ];
+});

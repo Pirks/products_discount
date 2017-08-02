@@ -62,10 +62,10 @@ class Products
      */
     public function create(array $data)
     {
-        $voucher = $this->products->fill($data);
-        $voucher->save();
+        $product = $this->products->fill($data);
+        $product->save();
         
-        return $voucher;
+        return $product;
     }
     
     /**
